@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+body{
+    font-family: Helvetica, sans-serif;
+}
+
+.cabecalho_bg{
+    background-color: #1D1E20;
+}
+
+.cabecalho{
+    color: #fff;
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px 40px;
+}
+
+.logo{
+    font-weight: 400;
+}
+
+.menu_cabecalho{
+    display: flex;
+    gap: 50px;
+}
+
+.menu_cabecalho a{
+    color: #fff;
+    font-size: 1.125rem;
+}
+
+.principal_bg{
+    background-color: #fff;
+    height: calc(100vh - 77px);
+}
+
+.principal{
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 20px;
+}
+
+.sites{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.sites div{
+    max-height: 324px;
+}
+
+.sites h2{
+    font-size: 1.125rem;
+    font-weight: 400;
+}
+
+.baralho_recomendado{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.card_recomendado{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.card_recomendado h3{
+    font-size: .875rem;
+    font-weight: 400;
+}
