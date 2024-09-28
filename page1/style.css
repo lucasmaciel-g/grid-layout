@@ -75,7 +75,7 @@ body{
         "propaganda produtos produtos" auto
     / auto auto auto;
     justify-content: center;
-    justify-items: center;
+    justify-items: start;
 }
 
 .principal_noticias{
@@ -84,6 +84,7 @@ body{
     justify-content: center;
     gap: 20px;
     grid-area: noticias;
+    margin-bottom: 20px;
 }
 
 .noticia{
@@ -102,7 +103,7 @@ body{
     justify-content: start;
     grid-template-columns: repeat(2, auto);
     /* margin-left: 20px; */
-    gap: 20px;
+    gap: 20px 43px;
     grid-area: produtos;
 }
 
@@ -111,6 +112,7 @@ body{
     justify-content: end;
     gap: 10px;
     grid-area: propaganda;
+    margin-right: 8px;
 }
 
 .propaganda h2{
