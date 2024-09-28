@@ -67,24 +67,21 @@ body{
 
 .principal{
     display: grid;
-    /* gap: 20px; */
     grid-template:
         "noticias noticias noticias" auto
-        "propaganda produtos produtos" auto
-        "propaganda produtos produtos" auto
-        "propaganda produtos produtos" auto
-    / auto auto auto;
+        "propaganda bermudas camisas" auto
+        "propaganda bermudas camisas" auto
+        "propaganda bermudas camisas" auto
+    / 227px 227px 227px;
     justify-content: center;
     justify-items: start;
+    gap: 20px;
 }
 
 .principal_noticias{
-    display: grid;
-    grid-template-columns: repeat(3, auto);
-    justify-content: center;
+    display: flex;
     gap: 20px;
     grid-area: noticias;
-    margin-bottom: 20px;
 }
 
 .noticia{
@@ -98,21 +95,11 @@ body{
     font-size: 1.125rem;
 }
 
-.produtos{
-    display: grid;
-    justify-content: start;
-    grid-template-columns: repeat(2, auto);
-    /* margin-left: 20px; */
-    gap: 20px 43px;
-    grid-area: produtos;
-}
-
 .propaganda{
-    display: grid;
-    justify-content: end;
+    display: flex;
+    flex-direction: column;
     gap: 10px;
     grid-area: propaganda;
-    margin-right: 8px;
 }
 
 .propaganda h2{
@@ -121,11 +108,24 @@ body{
     text-align: center;
 }
 
+.produtos_bermudas, .produtos_camisas{
+    display: flex;
+    flex-direction: column;
+    gap: 20px 42px;
+}
+
+.produtos_bermudas{
+    grid-area: bermudas;
+}
+
+.produtos_camisas{
+    grid-area: camisas;
+}
+
 .produtos_link{
-    display: grid;
-    grid-template-columns: repeat(2, auto);
-    gap: 10px;
+    display: flex;
     align-items: center;
+    gap: 10px;
 }
 
 .produtos_link h3{
