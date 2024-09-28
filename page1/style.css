@@ -61,10 +61,6 @@ body{
     display: inline-block;
 }
 
-.principal_bg{
-    background-color: #fff;
-}
-
 .principal{
     display: grid;
     grid-template:

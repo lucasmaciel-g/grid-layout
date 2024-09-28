@@ -61,27 +61,21 @@ body{
     display: inline-block;
 }
 
-.principal_bg{
-    background-color: #fff;
-}
-
-.principal{
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 40px;
+.secao_produtos{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, auto);
+    justify-content: center;
     gap: 20px;
 }
 
-.Produtos{
+.produto{
     display: flex;
     flex-direction: column;
     text-align: center;
     gap: 9px;
 }
 
-.Produtos h2{
+.produto h2{
     font-size: 1.125rem;
     font-weight: 400;
 }
